@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Control de acceso por roles</title>
+<style>
+:root{--bg:#f3f5f4;--ink:#18211f;--mut:#5d6b67;--line:#d3dbd8;--acc:#0b6e5c;--err:#a4262c;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Segoe UI",system-ui,sans-serif}
+main{max-width:920px;margin:0 auto;padding:1.5rem 1rem 4rem}
+h1,h2,h3{margin:0 0 .6rem;font-weight:650}
+h1{font-size:1.5rem}h2{font-size:1.15rem;margin-top:1.8rem}
+header{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding-bottom:1rem;border-bottom:2px solid var(--ink);margin-bottom:1rem}
+nav{display:flex;gap:.4rem;margin-bottom:1rem}
+button,input,textarea,select{font:inherit;padding:.5rem .7rem;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink)}
+button{background:var(--acc);color:#fff;border-color:var(--acc);cursor:pointer}
+button.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+button.ghost.on{border-color:var(--ink);font-weight:600}
+button.danger{background:var(--err);border-color:var(--err)}
+:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+form{display:grid;gap:.6rem;max-width:420px}
+form.wide{max-width:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:.9rem 1rem;margin-bottom:.7rem}
+.row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.msg{color:var(--acc);min-height:1.4em}.msg.err{color:var(--err)}
+.mut{color:var(--mut);font-size:.88rem}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:.88rem}
+th,td{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--line)}
+.scroll{overflow-x:auto}
+label.chk{display:inline-flex;gap:.3rem;align-items:center;margin-right:.7rem}
+label.chk input{padding:0}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script src="app.js"></script>
+</body>
+</html>
